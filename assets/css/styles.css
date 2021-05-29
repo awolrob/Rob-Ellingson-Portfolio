@@ -9,13 +9,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Helvetica, Arial, sans-serif;
-}
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
 
-body {
-    color: var(--tertiary-color);
-}  
-  
+
 header {
   background-color: var(--header-color);
   display: flex;
@@ -23,27 +20,22 @@ header {
   align-items: center;
   height: 125px;
 }
-header h1 {
-  font-weight: bold;
-  margin: 0;
-  font-size: 36px;
-  color: var(--primary-color);
+
+.name {
+  display: flex;
+  background: var(--alt-text-bg-color);
+  color: var(--header-color);
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 5px 10px 75px;
+  height: auto;
+  font-size: 55px;
 }
 
 header a {
   text-decoration: none;
   color: var(--alt-text-bg-color);
-  font-size: 30px;
-}
-
-.name {
-  display: flex;
-  color: var(--header-color);
-  align-items: center;
-  justify-content: flex-end;
-  background: var(--alt-text-bg-color);
-  padding: 10px 5px 10px 75px;
-  height: auto;
+  font-size: 25px;
 }
 
 header nav ul {
@@ -53,5 +45,29 @@ header nav ul {
   list-style: none;
   width: 650px;
   height: auto;
-   align-content: center;
+  align-content: center;
+}
+
+.hero {
+  display: flex;
+  height: 250px;
+  background-color: var(--secondary-color);
+  justify-content: flex-end;
+  flex-flow: wrap-reverse;
+  padding: 0 60px 25px 0;
+}
+
+.subtitle {
+  display: flex;
+  Height: 65px;
+  width: auto;
+  padding: 10px;
+  color: var(--header-color);
+  background: var(--alt-text-bg-color);
+  align-items: center;
+}
+
+.subtitle h2 {
+  font-size: 30px;
+  font-stretch: semi-expanded;
 }
