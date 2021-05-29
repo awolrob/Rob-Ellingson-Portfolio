@@ -17,29 +17,23 @@ body {
 }  
   
 header {
-  padding: 20px 35px;
   background-color: var(--header-color);
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap;
-  top: 0;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 80%;
-  z-index: 9999; */
+  align-items: center;
+  height: 125px;
 }
 header h1 {
   font-weight: bold;
   margin: 0;
   font-size: 36px;
   color: var(--primary-color);
-  /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
 }
 
 header a {
   text-decoration: none;
   color: var(--alt-text-bg-color);
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .name {
@@ -49,6 +43,7 @@ header a {
   justify-content: flex-end;
   background: var(--alt-text-bg-color);
   padding: 10px 5px 10px 75px;
+  height: auto;
 }
 
 header nav ul {
@@ -57,7 +52,6 @@ header nav ul {
   justify-content: space-evenly;
   list-style: none;
   width: 650px;
-  height: 150px;
-  /* flex-direction: row; */
-  align-content: center;
+  height: auto;
+   align-content: center;
 }
