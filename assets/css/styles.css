@@ -6,13 +6,18 @@
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+  width: 150px;
+}
 
 /* Header styles */
+
 header {
   background-color: var(--header-color);
   display: flex;
@@ -62,6 +67,7 @@ header nav ul {
 /* end header footer */
 
 /* Hero section */
+
 .hero {
   display: flex;
   height: 250px;
@@ -71,7 +77,7 @@ header nav ul {
   background-image: url(../images/comfort-zone.jpg);
   background-size: cover;
   background-attachment: fixed;
-  background-position: top ;
+  background-position: top;
 }
 
 .subtitle {
@@ -99,25 +105,44 @@ header nav ul {
   flex-wrap: wrap;
   color: var(--alt-text-bg-color);
   font-size: 35px;
-  align-content:flex-start;
+  align-content: flex-start;
   justify-content: flex-end;
   padding-right: 15px;
   text-align: right;
 }
+
 .about-me, .work, .contact-list {
   display: flex;
   height: 25%;
   padding: 15px;
 }
 
-h3 {
-  width: 150px;
+.work-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: solid var(--alt-text-bg-color);
+  width: 75%;
 }
 
-.me, .work-items, .contact-list {
+.small-work-items .work-items {
+  width: 50%;
+}
+
+.small-work-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.me, .contact-list {
   border-left: solid var(--alt-text-bg-color);
   padding-left: 25px;
   width: 75%;
+}
+
+.work-items {
+  padding: 10px 0 10px 25px;
 }
 
 .work-flex {
@@ -139,15 +164,17 @@ h3 {
   flex-direction: column;
   justify-content: center;
 }
+
 /* Footer styles */
+
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--header-color);
   padding: 15px;
-
 }
+
 footer a, footer li {
   text-decoration: none;
   color: var(--alt-text-bg-color);
@@ -169,11 +196,12 @@ footer ul {
   padding-top: 1%;
   padding-bottom: 1%;
 }
+
 /* end footer styles */
 
 /* utilities */
-.right-radius {
-  border-top-right-radius: 18px;
-  border-bottom-right-radius: 18px;
 
+.right-radius {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
