@@ -13,7 +13,7 @@
   }
 
 
-header {
+header, footer {
   background-color: var(--header-color);
   display: flex;
   justify-content: space-between;
@@ -32,13 +32,13 @@ header {
   font-size: 55px;
 }
 
-header a {
+header a, footer a, footer li {
   text-decoration: none;
   color: var(--alt-text-bg-color);
   font-size: 25px;
 }
 
-header nav ul {
+header nav ul, footer ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -73,4 +73,24 @@ header nav ul {
 .subtitle h2 {
   font-size: 25px;
   font-stretch: semi-expanded;
+}
+
+.content-sections {
+  display: flex;
+}
+
+footer {
+  height: 75px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 950px;
+}
+
+footer li {
+  
 }
