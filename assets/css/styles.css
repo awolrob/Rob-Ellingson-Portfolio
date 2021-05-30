@@ -12,7 +12,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
-
+/* Header footer styles */
 header, footer {
   background-color: var(--header-color);
   display: flex;
@@ -47,7 +47,9 @@ header nav ul, footer ul {
   height: auto;
   align-content: center;
 }
+/* end header footer */
 
+/* Hero section */
 .hero {
   display: flex;
   height: 250px;
@@ -72,13 +74,38 @@ header nav ul, footer ul {
 
 .subtitle h2 {
   font-size: 25px;
-  font-stretch: semi-expanded;
 }
 
-.content-sections {
+/* End hero section */
+
+/* work sections */
+
+.content-titles {
+  width: 25%;
+  height: 15%;
   display: flex;
+  flex-wrap: wrap;
+  color: var(--alt-text-bg-color);
+  font-size: 35px;
+  align-content:flex-start;
+  justify-content: flex-end;
+  padding-right: 15px;
+  text-align: right;
+}
+.about-me, .work {
+  display: flex;
+  height: 25%;
+  width: 100%;
+  padding: 15px;
 }
 
+.me, .work-items {
+  border-left: solid var(--alt-text-bg-color);
+  padding-left: 25px;
+  width: 75%;
+}
+
+/* Footer styles */
 footer {
   height: 75px;
 }
@@ -92,5 +119,6 @@ footer ul {
 }
 
 footer li {
-  
+
 }
+/* end footer styles */
