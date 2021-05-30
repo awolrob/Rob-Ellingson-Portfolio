@@ -12,41 +12,43 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
-/* Header footer styles */
-header, footer {
+/* Header styles */
+header {
   background-color: var(--header-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 125px;
+  padding: 15px;
 }
 
 .name {
-  display: flex;
   background: var(--alt-text-bg-color);
   color: var(--header-color);
-  align-items: center;
-  justify-content: flex-end;
   padding: 10px 5px 10px 75px;
   height: auto;
   font-size: 55px;
+  text-align: right;
 }
 
-header a, footer a, footer li {
+header a {
   text-decoration: none;
   color: var(--alt-text-bg-color);
-  font-size: 25px;
+  font-size: 30px;
 }
 
-header nav ul, footer ul {
+header .nav {
+  width: 75%;
+}
+
+header nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   list-style: none;
-  width: 650px;
   height: auto;
   align-content: center;
 }
+
 /* end header footer */
 
 /* Hero section */
@@ -92,33 +94,54 @@ header nav ul, footer ul {
   padding-right: 15px;
   text-align: right;
 }
-.about-me, .work {
+.about-me, .work, .contact-list {
   display: flex;
   height: 25%;
-  width: 100%;
   padding: 15px;
 }
 
-.me, .work-items {
+h3 {
+  width: 150px;
+}
+
+.me, .work-items, .contact-list {
   border-left: solid var(--alt-text-bg-color);
   padding-left: 25px;
   width: 75%;
 }
 
+.work-items {
+
+}
+
 /* Footer styles */
 footer {
-  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-color);
+  padding: 15px;
+
+}
+footer a, footer li {
+  text-decoration: none;
+  color: var(--alt-text-bg-color);
+  font-size: 30px;
 }
 
 footer ul {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  width: 950px;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 75%;
+  height: auto;
+  align-content: center;
 }
 
-footer li {
-
+.contact-list {
+  justify-content: flex-end;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 /* end footer styles */
