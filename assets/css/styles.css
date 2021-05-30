@@ -118,10 +118,25 @@ h3 {
   width: 75%;
 }
 
-.work-items {
-
+.work-flex {
+  display: flex;
+  background-image: url(../images/comfort-zone.jpg);
+  background-size: cover;
+  height: 450px;
+  border: solid var(--primary-color);
+  align-items: flex-end;
+  padding-bottom: 10px;
 }
 
+.work-titles {
+  display: flex;
+  background-color: var(--primary-color);
+  width: auto;
+  height: 85px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
 /* Footer styles */
 footer {
   display: flex;
