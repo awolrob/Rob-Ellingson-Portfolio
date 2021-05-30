@@ -19,6 +19,13 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
+  position: sticky;
+  top: 0;
+}
+
+.name-flex {
+  display: flex;
+  width: 45%;
 }
 
 .name {
@@ -26,6 +33,7 @@ header {
   color: var(--header-color);
   padding: 10px 5px 10px 75px;
   height: auto;
+  width: auto;
   font-size: 55px;
   text-align: right;
 }
