@@ -1,0 +1,11 @@
+.linkedImage { 
+  display:block;
+  
+  margin: 0px auto;
+  padding: 0px 15px 0px 15px;
+  border: none;
+  background: url(../images/Rob.jpg) no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 200px;
+}      
