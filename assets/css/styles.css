@@ -125,15 +125,13 @@ header nav ul {
   width: 75%;
 }
 
-.small-work-items .work-items {
-  width: 50%;
-}
 
-.small-work-items {
+
+/* .small-work-items {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
+} */
 
 .me, .contact-list {
   border-left: solid var(--alt-text-bg-color);
@@ -143,6 +141,8 @@ header nav ul {
 
 .work-items {
   padding: 10px 0 10px 25px;
+  .work-items;
+  width: 50%;
 }
 
 .work-flex {
