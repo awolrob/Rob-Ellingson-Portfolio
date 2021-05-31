@@ -147,7 +147,7 @@ header nav ul {
   margin: 0px auto;
   padding: 0px 0px 0px 0px;
   border: none;
-  background: url(../images/Rob.jpg) no-repeat;
+  background: url(../images/run-buddy.JPG) no-repeat;
   background-size: 100%;
   width: 870px;
   height: 750px;
@@ -158,7 +158,7 @@ header nav ul {
 
 .work-item-2 {
   flex-basis: var(--work-items-sm-flex-basis);
-  background-image: url(../images/Rob.jpg);
+  background-image: url(../images/comfort-zone.jpg);
   background-size: cover;
   border: solid var(--primary-color);
   margin: 10px 0;
