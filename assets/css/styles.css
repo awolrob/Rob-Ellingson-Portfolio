@@ -135,21 +135,25 @@ header nav ul {
 }
 
 .work-item-1 {
+  display: block;
   flex-basis: 100%;
   border: solid var(--primary-color);
   margin: 10px 0;
 }
 
 .linkedImage { 
-  display:inline-block;
+  display:block;
   
   margin: 0px auto;
   padding: 0px 0px 0px 0px;
   border: none;
   background: url(../images/Rob.jpg) no-repeat;
   background-size: 100%;
-  width: 250px;
-  height: 250px;
+  width: 870px;
+  height: 750px;
+  /* position: absolute; */
+  z-index: -1;
+  background-position: bottom;
 }     
 
 .work-item-2 {
@@ -179,10 +183,12 @@ header nav ul {
 }
 
 .work-flex {
-  display: flex;
-  height: 650px;
+  display: inline-flex;
+  /* height: 650px; */
   padding-bottom: 15px;
-  align-items: flex-end;
+  /* align-items: flex-end; */
+  /* position: absolute; */
+  z-index: 1;
 }
 
 .work-titles {
