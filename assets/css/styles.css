@@ -90,34 +90,26 @@ header nav ul {
 
 /* End hero section */
 
-/* work sections */
+/* aside */
 
 .content-titles {
-  flex-basis: 15%;
-  height: 15%;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
+  flex-basis: 10%;
   color: var(--alt-text-bg-color);
   font-size: 25px;
-  /* align-content: flex-start; */
-  /* justify-content: flex-end; */
   padding-right: 15px;
   text-align: right;
 }
 
-.content-titles h3 {
-  flex-basis: 15%;
-}
-.about-me,  .contact-list {
+.about-me, .work, .contact-list {
   display: flex;
-  height: 25%;
   padding: 15px;
 }
 
-.work {
-  display: flex;
-  padding: 15px;
-}
+/* end aside */
+
+/* work sections */
+
+/* Common styles */
 
 .work-section {
   display: flex;
@@ -126,7 +118,12 @@ header nav ul {
   border-left: solid var(--alt-text-bg-color);
   width: 75%;
   padding-left: 25px;
-  /* margin: 0 auto; */
+}
+
+.work-section a  {
+  display: flex;
+  width: 100%;
+  text-decoration: none;
 }
 
 .me, .contact-list {
@@ -135,18 +132,11 @@ header nav ul {
   width: 75%;
 }
 
-/* .work-item-1 {
-  width: 900px;
-  border: solid var(--primary-color);
-  margin: 0 auto;
-} */
-
 .work-item-1 {
   display: flex;
   width: 100%;
   height: 450px;
   border: solid var(--primary-color);
-  /* position: relative; */
   align-items: flex-end;
   padding-bottom: 15px;
   background-image: url(../images/run-buddy.JPG);
@@ -154,60 +144,77 @@ header nav ul {
   background-position-y: top;
 }
 
-.work-section a {
-  width: 100%;
-}
-
-.workItem-1 {
-  /* background-image: url(../images/run-buddy.JPG);
-  background-size: cover;
-  background-position-y: top; */
-}
-/* .projectTitle { 
-  position: absolute;
-  bottom: 20px;
-  background-color: var(--secondary-color);
-  padding: 1em;
-  margin-left: 1em;
-  font-variant: small-caps;
-  font-weight: bold;
-}      */
-
 .work-item-2 {
-  flex-basis: var(--work-items-sm-flex-basis);
+  display: flex;
+  width: 100%;
+  height: 450px;
+  border: solid var(--primary-color);
+  align-items: flex-end;
+  padding-bottom: 15px;
+  background-image: url(../images/run-buddy.JPG);
+  background-size: cover;
+  background-position-y: top;
+}
+
+.small-work-items a {
+  /* display: flex; */
+  /* width: 100%; */
+  text-decoration: none;
+}
+
+/* .small-work-items a {
+  display: flex;
+  text-decoration: none;
+} */
+
+/* .work-item-2 {
+  flex-basis: var(--work-items-sm-flex-basis); 
   background-image: url(../images/comfort-zone.jpg);
   background-size: cover;
   border: solid var(--primary-color);
   margin: 10px 0;
-}
+}  */
+
+/* .small-work-items { */
+  /* display: flex;
+  width: 100%;
+  height: 450px; */
+  /* border: solid var(--primary-color); */
+  /* align-items: flex-end; */
+  /* padding-bottom: 15px; */
+  /* background-image: url(../images/run-buddy.JPG); */
+  /* background-size: cover; */
+  /* background-position-y: top; */
+/* } */
 
 .work-item-3 {
-  flex-basis: var(--work-items-sm-flex-basis);
+  /* flex-basis: var(--work-items-sm-flex-basis); */
   border: solid var(--primary-color);
   margin: 10px 0;
 }
 
 .work-item-4 {
-  flex-basis: var(--work-items-sm-flex-basis);
+  /* flex-basis: var(--work-items-sm-flex-basis); */
   border: solid var(--primary-color);
   margin: 10px 0;
 }
 
 .work-item-5 {
-  flex-basis: var(--work-items-sm-flex-basis);
+  /* flex-basis: var(--work-items-sm-flex-basis); */
   border: solid var(--primary-color);
   margin: 10px 0;
 }
 
 .work-flex {
-  display: flex;
-  height: 450px;
+  /* display: flex; */
+  /* height: 450px; */
+  /* width: var(--work-items-sm-flex-basis); */
   /* padding-bottom: 15px; */
   /* align-items: flex-end; */
   /* position: absolute; */
   /* z-index: 1; */
-  align-items: flex-end;
-  padding-bottom: 15px;
+  /* align-items: flex-end; */
+  /* padding-bottom: 15px; */
 }
 
 .work-titles {
@@ -218,6 +225,7 @@ header nav ul {
   width: 200px;
   height: 85px;
   padding: 25px;
+  color: var(--secondary-color);
 }
 
 /* Footer styles */
@@ -246,7 +254,7 @@ footer ul {
 }
 
 .contact-list {
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   padding-top: 1%;
   padding-bottom: 1%;
 }
@@ -260,6 +268,4 @@ footer ul {
   border-bottom-right-radius: 8px;
 }
 
-@media(min-width:768px) {
-
-}
+@media(min-width:768px) {}
