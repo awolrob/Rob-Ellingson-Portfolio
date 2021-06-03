@@ -127,18 +127,20 @@ header .nav ul li {
   justify-content: space-between;
   flex-wrap: wrap;
   border-left: solid var(--alt-text-bg-color);
-  width: 75%;
+  /* width: 75%; */
+  flex: 1 100%;
   padding-left: 25px;
 }
 
 .work-section a {
   display: flex;
-  width: 48%;
+  /* width: 48%; */
+  flex: 2 48%;
   text-decoration: none;
 }
 
 .work-section .first-item {
-  width: 100%;
+  flex: 1 100%;
 }
 
 .me, .contact-list {
