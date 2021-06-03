@@ -19,18 +19,20 @@ header {
   display: flex;
   align-items: center;
   background-color: var(--header-color);
-  /* position: sticky;
-  top: 0; */
+  position: sticky;
+  top: 0;
+  z-index: 99;  
   padding: 15px 0;
 }
 
 .photo {
   background-image: url(../images/Rob.jpg);
-  /* background-color: violet; */
-  background-size: cover;
-  height: 100px;
+  background-color: violet;
+  background-size: 100%;
+  height: 85px;
   width: 100px;
   background-position-y: center;
+  background-repeat: no-repeat;
 }
 
 .name {
@@ -52,15 +54,19 @@ header .nav {
   flex-basis: 70%;
 }
 
-header nav ul {
+header .nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   list-style: none;
   height: auto;
-  align-content: center;
+  align-items: center;
+  /* align-content: center; */
 }
-
+header .nav ul li {
+  margin: 0px 25px;
+  align-items: center;
+}
 /* end header footer */
 
 /* Hero section */
@@ -123,7 +129,7 @@ header nav ul {
   padding-left: 25px;
 }
 
-.work-section a  {
+.work-section a {
   display: flex;
   width: 100%;
   text-decoration: none;
@@ -145,10 +151,18 @@ header nav ul {
   background-image: url(../images/run-buddy.JPG);
   background-size: cover;
   background-position-y: top;
+  opacity: 75%;
   margin: 10px 0;
 }
 
-.work-section { 
+.work-item:hover {
+  opacity: 100%;
+  border-top-left-radius: 175px;
+  border-bottom-right-radius: 175px;
+  height: 750px;
+}
+
+.work-section {
   display: block;
   width: 100%;
 }
@@ -201,11 +215,8 @@ footer ul {
 /* utilities */
 
 .right-radius {
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-.full-radius {
-  border-radius: 25%;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 25px ;
 }
 
 @media(min-width:768px) {}
