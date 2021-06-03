@@ -19,24 +19,27 @@ header {
   display: flex;
   align-items: center;
   background-color: var(--header-color);
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
   padding: 15px 0;
 }
 
 .photo {
   background-image: url(../images/Rob.jpg);
+  /* background-color: violet; */
   background-size: cover;
-  width: 10px;
+  height: 100px;
+  width: 100px;
+  background-position-y: center;
 }
 
 .name {
   background: var(--alt-text-bg-color);
   color: var(--header-color);
   padding: 10px 5px 10px 75px;
-  font-size: 55px;
+  font-size: 45px;
   text-align: right;
-  flex-basis: 35%;
+  /* width: 50%; */
 }
 
 header a {
@@ -100,7 +103,7 @@ header nav ul {
   text-align: right;
 }
 
-.about-me, .work, .contact-list {
+.about-me, .work, .footerNav {
   display: flex;
   padding: 15px;
 }
@@ -113,7 +116,7 @@ header nav ul {
 
 .work-section {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
   border-left: solid var(--alt-text-bg-color);
   width: 75%;
@@ -129,10 +132,10 @@ header nav ul {
 .me, .contact-list {
   border-left: solid var(--alt-text-bg-color);
   padding-left: 25px;
-  width: 75%;
+  flex-basis: 92%;
 }
 
-.work-item-1 {
+.work-item {
   display: flex;
   width: 100%;
   height: 450px;
@@ -142,79 +145,12 @@ header nav ul {
   background-image: url(../images/run-buddy.JPG);
   background-size: cover;
   background-position-y: top;
+  margin: 10px 0;
 }
 
-.work-item-2 {
-  display: flex;
+.work-section { 
+  display: block;
   width: 100%;
-  height: 450px;
-  border: solid var(--primary-color);
-  align-items: flex-end;
-  padding-bottom: 15px;
-  background-image: url(../images/run-buddy.JPG);
-  background-size: cover;
-  background-position-y: top;
-}
-
-.small-work-items a {
-  /* display: flex; */
-  /* width: 100%; */
-  text-decoration: none;
-}
-
-/* .small-work-items a {
-  display: flex;
-  text-decoration: none;
-} */
-
-/* .work-item-2 {
-  flex-basis: var(--work-items-sm-flex-basis); 
-  background-image: url(../images/comfort-zone.jpg);
-  background-size: cover;
-  border: solid var(--primary-color);
-  margin: 10px 0;
-}  */
-
-/* .small-work-items { */
-  /* display: flex;
-  width: 100%;
-  height: 450px; */
-  /* border: solid var(--primary-color); */
-  /* align-items: flex-end; */
-  /* padding-bottom: 15px; */
-  /* background-image: url(../images/run-buddy.JPG); */
-  /* background-size: cover; */
-  /* background-position-y: top; */
-/* } */
-
-.work-item-3 {
-  /* flex-basis: var(--work-items-sm-flex-basis); */
-  border: solid var(--primary-color);
-  margin: 10px 0;
-}
-
-.work-item-4 {
-  /* flex-basis: var(--work-items-sm-flex-basis); */
-  border: solid var(--primary-color);
-  margin: 10px 0;
-}
-
-.work-item-5 {
-  /* flex-basis: var(--work-items-sm-flex-basis); */
-  border: solid var(--primary-color);
-  margin: 10px 0;
-}
-
-.work-flex {
-  /* display: flex; */
-  /* height: 450px; */
-  /* width: var(--work-items-sm-flex-basis); */
-  /* padding-bottom: 15px; */
-  /* align-items: flex-end; */
-  /* position: absolute; */
-  /* z-index: 1; */
-  /* align-items: flex-end; */
-  /* padding-bottom: 15px; */
 }
 
 .work-titles {
@@ -249,14 +185,15 @@ footer ul {
   align-content: center;
   list-style: none;
   flex-wrap: wrap;
-  width: 75%;
+  width: 100%;
   height: auto;
 }
 
 .contact-list {
   justify-content: space-evenly;
-  padding-top: 1%;
+  /* padding-top: 1%;
   padding-bottom: 1%;
+  width: 100%; */
 }
 
 /* end footer styles */
@@ -266,6 +203,9 @@ footer ul {
 .right-radius {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+.full-radius {
+  border-radius: 25%;
 }
 
 @media(min-width:768px) {}
