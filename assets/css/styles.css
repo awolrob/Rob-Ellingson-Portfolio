@@ -131,14 +131,6 @@ header .nav ul li {
   text-decoration: none;
 }
 
-.work-section .first-item {
-  flex: 1 100%;
-}
-
-.work-section .first-item .work-item {
-  height: 650px;
-}
-
 .me, .contact-list {
   border-left: solid var(--alt-text-bg-color);
   padding-left: 25px;
@@ -152,7 +144,7 @@ header .nav ul li {
   border: solid var(--primary-color);
   align-items: flex-end;
   padding-bottom: 15px;
-  background-image: url(../images/run-buddy.JPG);
+  /* background-image: url(../images/run-buddy.JPG); */
   background-size: cover;
   background-position-y: top;
   opacity: 75%;
@@ -161,7 +153,7 @@ header .nav ul li {
 
 .work-item:hover {
   opacity: 100%;
-  border-top-left-radius: 175px;
+  border-top-left-radius: 75px;
 }
 
 .work-titles {
@@ -173,6 +165,41 @@ header .nav ul li {
   height: 85px;
   padding: 25px;
   color: var(--secondary-color);
+}
+
+/* format items and add photos */
+
+.work-section a:nth-child(1){
+  flex: 1 100%;
+}
+
+#work1 {
+  background-image: url(../images/run-buddy.JPG);
+  height: 650px;
+}
+
+#work2 {
+  background-image: url(../images/BottegeHTMLCSS.JPG);
+}
+
+#work3 {
+  background-image: url(../images/robot-gladiators.JPG);
+}
+
+#work4 {
+  background-image: url(../images/MyBands.JPG);
+}
+
+#work5 {
+  background-image: url(../images/PwrPlus.JPG);
+}
+
+#work6 {
+  background-image: url(../images/NorlakeMfg.JPG);
+}
+
+#work7 {
+  background-image: url(../images/KalronLLC.JPG);
 }
 
 /* Footer styles */
@@ -218,19 +245,15 @@ footer ul {
     flex-direction: column;
     align-items: center;
   }
-  
   header {
     padding: 0;
   }
-
   .name, .nav a, .contact-list a, .contact-list li, .footerNav h3 {
     font-size: 25px;
   }
   .name {
     padding: 10px 5px 10px 0px;
   }
-
-
   .content-titles {
     flex-basis: 20%;
   }
