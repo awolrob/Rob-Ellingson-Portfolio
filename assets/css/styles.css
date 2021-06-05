@@ -144,7 +144,7 @@ header .nav ul li {
   border: solid var(--primary-color);
   align-items: flex-end;
   padding-bottom: 15px;
-  /* background-image: url(../images/run-buddy.JPG); */
+  background-image: url(../images/run-buddy.JPG);
   background-size: cover;
   background-position-y: top;
   opacity: 75%;
