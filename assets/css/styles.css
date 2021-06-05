@@ -1,5 +1,4 @@
 :root {
-  --primary-color: #fce138;
   --secondary-color: #024e76;
   --header-color: dimgray;
   --alt-text-bg-color: burlywood;
@@ -84,10 +83,10 @@ header .nav ul li {
   Height: 65px;
   width: auto;
   padding: 10px;
-  color: var(--header-color);
+  color: var(--secondary-color);
   background: var(--alt-text-bg-color);
   align-items: center;
-}
+  }
 
 .subtitle h2 {
   font-size: 25px;
@@ -135,19 +134,20 @@ header .nav ul li {
   border-left: solid var(--alt-text-bg-color);
   padding-left: 25px;
   flex-basis: 92%;
+  color: var(--secondary-color);
+  font-size: 20px;
 }
 
 .work-item {
   display: flex;
   width: 100%;
   height: 450px;
-  border: solid var(--primary-color);
+  border: solid var(--alt-text-bg-color);
   align-items: flex-end;
   padding-bottom: 15px;
-  background-image: url(../images/run-buddy.JPG);
   background-size: cover;
   background-position-y: top;
-  opacity: 75%;
+  opacity: 65%;
   margin: 10px 10px;
 }
 
@@ -160,7 +160,7 @@ header .nav ul li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--primary-color);
+  background-color: var(--alt-text-bg-color);
   width: 200px;
   height: 85px;
   padding: 25px;
@@ -169,7 +169,7 @@ header .nav ul li {
 
 /* format items and add photos */
 
-.work-section a:nth-child(1){
+.work-section a:nth-child(1) {
   flex: 1 100%;
 }
 
