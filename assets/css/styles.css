@@ -19,15 +19,11 @@ header {
   display: flex;
   align-items: center;
   background-color: var(--header-color);
-  position: sticky;
-  top: 0;
-  z-index: 99;
   padding: 15px 0;
 }
 
 .photo {
   background-image: url(../images/Rob.jpg);
-  background-color: violet;
   background-size: 100%;
   height: 85px;
   width: 100px;
@@ -36,18 +32,19 @@ header {
 }
 
 .name {
+  display: flex;
+  justify-content: flex-end;
   background: var(--alt-text-bg-color);
   color: var(--header-color);
-  padding: 10px 5px 10px 75px;
-  font-size: 45px;
-  text-align: right;
-  /* width: 50%; */
+  padding: 10px 5px 10px 80px;
+  font-size: 55px;
+  /* flex: 1 -1 15% ; */
 }
 
 header a {
   text-decoration: none;
   color: var(--alt-text-bg-color);
-  font-size: 30px;
+  font-size: 45px;
 }
 
 header .nav {
@@ -59,14 +56,11 @@ header .nav ul {
   flex-wrap: wrap;
   justify-content: flex-end;
   list-style: none;
-  height: auto;
   align-items: center;
-  /* align-content: center; */
 }
 
 header .nav ul li {
   margin: 0px 25px;
-  align-items: center;
 }
 
 /* end header footer */
@@ -127,20 +121,22 @@ header .nav ul li {
   justify-content: space-between;
   flex-wrap: wrap;
   border-left: solid var(--alt-text-bg-color);
-  /* width: 75%; */
   flex: 1 100%;
   padding-left: 25px;
 }
 
 .work-section a {
   display: flex;
-  /* width: 48%; */
   flex: 2 48%;
   text-decoration: none;
 }
 
 .work-section .first-item {
   flex: 1 100%;
+}
+
+.work-section .first-item .work-item {
+  height: 650px;
 }
 
 .me, .contact-list {
@@ -160,14 +156,12 @@ header .nav ul li {
   background-size: cover;
   background-position-y: top;
   opacity: 75%;
-  margin: 10px 0;
+  margin: 10px 10px;
 }
 
 .work-item:hover {
   opacity: 100%;
   border-top-left-radius: 175px;
-  border-bottom-right-radius: 175px;
-  height: 750px;
 }
 
 .work-titles {
@@ -208,9 +202,6 @@ footer ul {
 
 .contact-list {
   justify-content: space-evenly;
-  /* padding-top: 1%;
-  padding-bottom: 1%;
-  width: 100%; */
 }
 
 /* end footer styles */
@@ -222,4 +213,49 @@ footer ul {
   border-bottom-right-radius: 25px;
 }
 
-@media(min-width:768px) {}
+@media screen and (max-width: 1070px) {
+  header, footer, .about-me, .work, footer ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header {
+    padding: 0;
+  }
+
+  .name, .nav a, .contact-list a, .contact-list li, .footerNav h3 {
+    font-size: 25px;
+  }
+  .name {
+    padding: 10px 5px 10px 0px;
+  }
+
+
+  .content-titles {
+    flex-basis: 20%;
+  }
+  .photo {
+    background-image: none;
+    height: 0;
+    width: 0;
+  }
+  .contact-list {
+    border-left: none;
+    padding-left: 0;
+  }
+  .footerNav a {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .name, .nav a, .contact-list a, .contact-list li, .footerNav h3, .subtitle h2 {
+    font-size: 15px;
+  }
+  footer, footer ul, header, header ul {
+    flex-direction: row;
+  }
+  header {
+    padding: 0;
+  }
+}
